@@ -1,0 +1,253 @@
+html {
+  background: rgb(73, 155, 70);
+  background-size: cover;
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 10px;
+  margin: 0;
+}
+
+:root {
+  --text-color: black;
+  --back-color: white;
+}
+
+.left {
+  float: left;
+  background-color: var(--back-color);
+  color: var(--text-color);
+  height: 100vh;
+  margin: 0;
+  font-size: 2rem;
+  position: static;
+}
+
+div.left div.title {
+  display: inline-block;
+  background-color: var(--text-color);
+  color: var(--back-color);
+  margin: 2rem;
+  position: static;
+}
+
+.left h3 {
+  overflow: hidden;
+  font-family: 'Roboto', Sans-serif, monospace;
+  font-size: 10 rem;
+  display: block;
+  margin: 1rem 11rem 1rem 11rem;
+  height: 5%;
+  text-align: center;
+  background-color: var(--text-color);
+  color: var(--back-color);
+}
+
+.left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: center;
+  background-color: var(--back-color);
+  color: var(--text-color);
+}
+
+.left li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 16px;
+  font-family: 'Roboto', Sans-serif, monospace;
+  color: inherit;
+}
+
+.left li a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.left li a:hover,.left li a:focus,.left li a:active {
+  text-decoration: none;
+  background: var(--text-color);
+  color: var(--back-color);
+  font-weight: bold;
+}
+
+.right {
+  float: right;
+  background-color: var(--back-color);
+  color: var(--text-color);
+  height: 100vh;
+  margin: 0;
+  font-size: 2rem;
+  position: static;
+}
+
+
+div.right div.title {
+  display: inline-block;
+  background-color: var(--text-color);
+  color: var(--back-color);
+  margin: 2rem;
+  position: static;
+}
+
+.right h3 {
+  overflow: hidden;
+  font-family: 'Roboto', Sans-serif, monospace;
+  font-size: 10 rem;
+  display: block;
+  margin: 1rem 11rem 1rem 11rem;
+  height: 5%;
+  text-align: center;
+  background-color: var(--text-color);
+  color: var(--back-color);
+}
+
+.right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: center;
+  background-color: var(--back-color);
+  color: var(--text-color);
+}
+
+.right li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 16px;
+  font-family: 'Roboto', Sans-serif, monospace;
+  color: inherit;
+}
+
+.right li a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.right li a:hover,.right li a:focus,.right li a:active {
+  text-decoration: none;
+  background: var(--text-color);
+  color: var(--back-color);
+  font-weight: bold;
+}
+
+main {
+  font-size: 2rem;
+  display: flex;
+  position: center absolute;
+  top: 50%;
+  transform: translateY(50%);
+  align-items: center;
+  justify-content: center;
+}
+
+/* CLOCK STYLES */
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 100%;
+  position: relative;
+  padding: 2rem;
+  box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.clock-face {
+  overflow: hidden;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+}
+
+.handHour {
+  width: 5px;
+  height: 11rem;
+  background: rgb(109, 37, 37);
+  position: absolute;
+  margin: auto;
+  top: 11rem;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  transform-origin: top;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: ease-in;
+  z-index: 2;
+}
+
+.handMin {
+  width: 5px;
+  height: 16rem;
+  background: blue;
+  position: absolute;
+  margin: auto;
+  top: 16rem;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  transform-origin: top;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: ease-in;
+  z-index: 2;
+}
+
+.handSec {
+  width: 2px;
+  height: 17rem;
+  background: rgb(212, 160, 47);
+  position: absolute;
+  margin: auto;
+  top: 17rem;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  transform-origin: top;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: ease-in;
+  z-index: 2;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  background: black;
+  border: 5px solid rgb(109, 37, 37);
+  border-radius: 100px;
+  margin: auto;
+  z-index: 3;
+}
+
+.time {
+  font-family: 'Roboto', Sans-serif, monospace;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+}
+
+.time_text {
+  display:block;
+  font-family: 'Roboto', Sans-serif, monospace;
+  justify-content: center;
+  word-wrap: break-word;
+  top: 20rem;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  z-index: 1;
+}
