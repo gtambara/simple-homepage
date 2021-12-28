@@ -1,7 +1,7 @@
 //Random style
 var caso = Math.floor(Math.random() * 4)
 
-switch(caso){
+switch(caso) {
   case 0:
     // verde
     var fundo = "#499B46"
@@ -94,7 +94,6 @@ function setTimeText() {
   if(hours > 17 && hours <= 21){
     document.querySelector('span.time_text > p').innerHTML = "Ripa na xulipa"
   }
-
 }
 
 setInterval(setHandHour)

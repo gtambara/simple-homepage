@@ -1,3 +1,8 @@
+:root {
+  --text-color: black;
+  --back-color: white;
+}
+
 html {
   background: rgb(73, 155, 70);
   background-size: cover;
@@ -5,11 +10,6 @@ html {
   text-align: center;
   font-size: 10px;
   margin: 0;
-}
-
-:root {
-  --text-color: black;
-  --back-color: white;
 }
 
 .left {
@@ -65,7 +65,7 @@ div.left div.title {
   color: inherit;
 }
 
-.left li a:hover,.left li a:focus,.left li a:active {
+.left li a:hover, .left li a:focus, .left li a:active {
   text-decoration: none;
   background: var(--text-color);
   color: var(--back-color);
@@ -81,7 +81,6 @@ div.left div.title {
   font-size: 2rem;
   position: static;
 }
-
 
 div.right div.title {
   display: inline-block;
@@ -126,7 +125,7 @@ div.right div.title {
   color: inherit;
 }
 
-.right li a:hover,.right li a:focus,.right li a:active {
+.right li a:hover, .right li a:focus, .right li a:active {
   text-decoration: none;
   background: var(--text-color);
   color: var(--back-color);
@@ -194,7 +193,7 @@ main {
   transform: rotate(90deg);
   transition: all 0.05s;
   transition-timing-function: ease-in;
-  z-index: 2;
+  z-index: 1;
 }
 
 .handSec {
